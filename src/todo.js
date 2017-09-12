@@ -1,3 +1,11 @@
+// page set up (one time)
+
+function init () {
+    var add = document.getElementById('add').addEventListener('click',add);
+}
+
+init();
+
 function get_todos() {
     var todos = new Array;
     var todos_str = localStorage.getItem('todo');
